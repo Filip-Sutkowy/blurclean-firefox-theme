@@ -1,0 +1,177 @@
+
+
+#main-window {
+	background: var(--bf-main-window) !important;
+	-moz-appearance: var(--bf-moz-appearance) !important;
+}
+
+
+
+
+
+.browser-toolbar {
+	background: var(--bf-tab-toolbar-bg) !important;
+}
+
+toolbar {
+	background-image: none !important;
+}
+
+toolbar#nav-bar {
+	padding: var(--bf-navbar-padding) !important;
+	
+	box-shadow: none !important;
+	border-top: none !important;
+}
+
+
+toolbar#nav-bar {
+	background: var(--bf-navbar-bg) !important;
+}
+
+toolbarbutton {
+	box-shadow: none !important;
+	margin-left: 2px !important;
+}
+
+
+.toolbarbutton-1 {
+	--toolbarbutton-hover-background: var(--bf-hover-bg) !important;
+	--toolbarbutton-active-background: var(--bf-active-bg) !important;
+}
+
+
+
+#searchbar {
+	background: var(--bf-bg) !important;
+}
+
+
+.toolbarbutton-text {
+	color: var(--bf-icon-color)  !important;
+}
+
+
+#back-button > .toolbarbutton-icon {
+	--backbutton-background: transparent !important;
+	border: none !important;
+	-moz-appearance: var(--bf-moz-appearance) !important;
+}
+
+
+
+
+#urlbar-input:focus {
+	color: var(--bf-urlbar-focused-color) !important;
+}
+
+#urlbar-background {
+	border-radius: var(--bf-urlbar-radius) !important;
+	border: none !important;
+	background: var(--bf-urlbar-bg) !important;
+}
+
+
+#urlbar[open="true"] > #urlbar-background {
+	background: var(--bf-urlbar-active-bg) !important;
+	backdrop-filter: blur(var(--bf-backdrop-blur)) !important;
+}
+
+
+#sidebar-box {
+	--sidebar-background-color: var(--bf-sidebar-bg) !important;
+	--sidebar-text-color: var(--bf-sidebar-color) !important;
+}
+
+#sidebar,
+.sidebar-panel {
+	background: transparent !important;
+}
+
+
+
+
+
+
+#browser #appcontent #tabbrowser-tabbox findbar,
+#browser #appcontent #tabbrowser-tabbox tabpanels {
+	-moz-appearance: none !important;
+	border: none !important;
+	background: transparent !important;
+}
+
+#browser #appcontent #tabbrowser-tabbox findbar {
+	background-color: var(--bf-bg) !important;
+}
+
+
+#browser #appcontent #tabbrowser-tabbox .findbar-find-fast:not([status="notfound"]) {
+	background-color: var(--bf-bg) !important;
+}
+
+
+
+
+
+menupopup,
+popup,
+popup > menu > menupopup:,
+menupopup > menu > menupopup {
+	-moz-appearance: none !important;
+	background: var(--bf-menupopup-bg) !important;
+	color: var(--bf-menupopup-color) !important;
+}
+
+menupopup menuseparator {
+	border-top: none !important;
+	border-color: transparent !important;
+}
+
+menupopup menuseparator {
+	-moz-appearance: none !important;
+}
+
+
+
+
+
+#customization-container {
+	background: var(--bf-bg) !important;
+}
+
+
+.customizationmode-button {
+	color: var(--bf-color) !important;;
+}
+
+
+#window-controls[hidden="true"] {
+	display: none !important;
+	background: transparent!important;
+}
+
+#window-controls[hidden="false"] {
+	display: inline-flex !important;
+	background: transparent!important;
+}
+
+
+
+
+
+
+#autohide-context {
+	display: none !important;
+}
+
+#window-controls[hidden="true"] {
+	display: none !important;
+}
+
+#window-controls[hidden="false"] {
+	display: inline-flex !important;
+}
+
+:root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-buttonbox-container {
+	background: transparent!important;
+}

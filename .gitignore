@@ -1,0 +1,6 @@
+*.css
+*.js
+!userContent.css
+!userChrome.css
+!components/*
+!README.md
