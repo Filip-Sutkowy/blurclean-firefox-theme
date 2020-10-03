@@ -1,5 +1,5 @@
 @import url('components/variables.css');
 @import url('components/clean.css');
 
-// comment this if you run windows
+/* comment this if you run windows */
 @import url('components/transparency.css')
