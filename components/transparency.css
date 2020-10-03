@@ -115,7 +115,7 @@ toolbarbutton {
 
 menupopup,
 popup,
-popup > menu > menupopup:,
+popup > menu > menupopup,
 menupopup > menu > menupopup {
 	-moz-appearance: none !important;
 	background: var(--bf-menupopup-bg) !important;
@@ -145,18 +145,6 @@ menupopup menuseparator {
 }
 
 
-#window-controls[hidden="true"] {
-	display: none !important;
-	background: transparent!important;
-}
-
-#window-controls[hidden="false"] {
-	display: inline-flex !important;
-	background: transparent!important;
-}
-
-
-
 
 
 
@@ -174,4 +162,19 @@ menupopup menuseparator {
 
 :root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-buttonbox-container {
 	background: transparent!important;
+}
+
+
+#TabsToolbar {
+	background: transparent !important;
+}
+
+
+splitter#sidebar-splitter {
+	width: 1px;
+}
+
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+	--theme-colors-sidebar: transparent !important;
 }

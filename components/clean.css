@@ -57,3 +57,15 @@ menupopup > menu > menupopup {
 
 
 
+toolbar#nav-bar {
+	padding: var(--bf-navbar-padding) !important;
+	
+	/* Remove horizontal line on navbar */
+	box-shadow: none !important;
+	border-top: none !important;
+}
+
+
+#TabsToolbar {
+	padding-top: 12px !important;
+}

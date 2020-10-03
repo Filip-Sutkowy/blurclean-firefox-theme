@@ -1,0 +1,145 @@
+tab-item .closebox {
+	visibility: collapse;
+}
+
+tab-item:hover .closebox {
+visibility: visible;
+}
+
+tab-item {
+	--tab-surface: hsla(0, 0%, 100%, .05);
+}
+
+tab-item {
+	border: none;
+	outline: 1px solid hsla(0, 0%, 0%, 0.09);
+	--tab-size: 38px !important;
+	height: var(--tab-size);
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 0 0 0 14px !important;
+	margin: 0;
+}
+
+tab-item.unread {
+	opacity: .5;
+}
+
+tab-item.pinned {
+	padding: unset !important;
+}
+
+.tabs::after {
+	content: '';
+	position: fixed;
+	inset: 0;
+	display: block;
+	z-index: 999999999999999999;
+	pointer-events: none;
+
+	box-shadow: 
+		inset 0 24px 38px  3px rgba(0,0,0,0.14),
+		inset 0  9px 46px  8px rgba(0,0,0,0.12),
+		inset 0 11px 15px -7px rgba(0,0,0,0.20),
+		inset 0  2px  2px  0   rgba(0,0,0,0.14),
+		inset 0  3px  1px -2px rgba(0,0,0,0.12),
+		inset 0  1px  5px  0   rgba(0,0,0,0.20) !important;
+}
+
+tab-item.active:not(.pinned) {
+	padding-right: 10px !important;
+	margin-right: 2px !important;
+}
+tab-item.active {
+	z-index: 100;
+	box-shadow: 
+		0 24px 38px  3px rgba(0,0,0,0.14),
+		0  9px 46px  8px rgba(0,0,0,0.12),
+		0 11px 15px -7px rgba(0,0,0,0.20),
+		0  2px  2px  0   rgba(0,0,0,0.14),
+		0  3px  1px -2px rgba(0,0,0,0.12),
+		0  1px  5px  0   rgba(0,0,0,0.20) !important;
+}
+
+tab-item.active::after {
+	width: 10px;
+	background: currentcolor;
+	opacity: .5;
+	content: '';
+	position: absolute;
+	inset: 0;
+	left: unset;
+}
+
+tab-item.active.pinned::after {
+	width: 50%;
+	background-color: rgba(255,255,255,0.65);
+}
+
+tab-item.active > :nth-child(8),
+tab-item > :nth-child(8)::before,
+tab-item > :nth-child(8)::after {
+	display: none !important;
+}
+tab-item > tab-favicon {
+	order: 1;
+}
+tab-item > tab-label {
+	order: 2;
+}
+tab-item > tab-sound-button {
+	grid-area: sound;
+	order: 3;
+}
+tab-item > tab-counter {
+	order: 4;
+}
+tab-item > tab-twisty {
+	order: 99 !important;
+	position: unset;
+	display: block;
+}
+tab-item:not([data-child-ids]) tab-twisty,
+tab-item.pinned tab-twisty,
+tab-item.collapsed tab-twisty {
+	display: none !important;
+}
+tab-item > * {
+	margin: 0 !important;
+	padding-inline: 0 !important;
+}
+
+.newtab-button::before {
+	height: 12px;
+	width: 12px;
+	margin: 11px;
+}
+
+#tabbar {
+	bottom: 36px !important;
+}
+
+tab-item::before {
+	content: var(--overlay-content);
+	background: var(--overlay-color);
+	position: absolute;
+	inset: 0;
+}
+
+:root.sidebar {
+	background: transparent !important;
+	-moz-appearance: moz-win-glass !important;
+}
+
+:root[color-scheme="system-color"] #background::after {
+  content: none;
+background: transparent !important;
+}
+
+
+
+

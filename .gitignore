@@ -1,6 +1,10 @@
 *.css
 *.js
+
 !userContent.css
 !userChrome.css
 !components/*
+!other/*
 !README.md
+
+!tst_theme.css

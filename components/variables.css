@@ -50,5 +50,8 @@
 	
 	--bf-menupopup-bg: #000000AA;
 	--bf-menupopup-color: var(--bf-color);
+
+	--theme-colors-sidebar: transparent !important;
+	
 }
 
