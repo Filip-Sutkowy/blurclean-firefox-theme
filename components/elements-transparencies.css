@@ -1,0 +1,14 @@
+
+#widget-overflow-mainView,
+#urlbar[open="true"] > #urlbar-background {
+	background: var(--bct-urlbar-bg) !important;
+	backdrop-filter: blur(6px) !important;
+	border: none !important;
+}
+
+
+.panel-arrowcontent  {
+	background: var(--bct-popups-bg) !important;
+	border: none !important;
+}
+

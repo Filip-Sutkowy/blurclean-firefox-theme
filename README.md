@@ -15,6 +15,7 @@ based on [https://github.com/manilarome/blurredfox](https://github.com/manilarom
 1. Open `about:config` and set this preferences to **'true'** 
 
 + **`toolkit.legacyUserProfileCustomizations.stylesheets`**
++ **`svg.context-properties.content.enabled`**
 + **`layers.acceleration.force-enabled`**
 + **`gfx.webrender.all`**
 + **`gfx.webrender.enabled`**

@@ -1,0 +1,14 @@
+#main-window {
+	background: var(--bf-main-window) !important;
+	-moz-appearance: var(--bf-moz-appearance) !important;
+}
+
+
+.browser-toolbar {
+	background: var(--bf-tab-toolbar-bg) !important;
+}
+
+
+toolbar {
+	background-image: none !important;
+}

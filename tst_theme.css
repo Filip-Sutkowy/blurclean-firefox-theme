@@ -1,145 +1,118 @@
+/* paste this as Extra Styles in Advanced section of Tree Style Tab addon preferences */
+
+/* tab shape and semi-transparent background (looks well on both dark and light mode) */
+tab-item tab-item-substance {
+	border-radius: 10px 0 0 10px;
+	background-color: #00000033;  
+}
+tab-item.pinned tab-item-substance {
+	border-radius: 0;
+}
+
+/* hide close button when not hovered */
 tab-item .closebox {
 	visibility: collapse;
 }
-
 tab-item:hover .closebox {
-visibility: visible;
+	visibility: visible;
 }
 
+/* tab active opacity and bold */
 tab-item {
-	--tab-surface: hsla(0, 0%, 100%, .05);
-}
-
-tab-item {
-	border: none;
-	outline: 1px solid hsla(0, 0%, 0%, 0.09);
-	--tab-size: 38px !important;
-	height: var(--tab-size);
-
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 12px;
-	padding: 0 0 0 14px !important;
-	margin: 0;
-}
-
-tab-item.unread {
-	opacity: .5;
-}
-
-tab-item.pinned {
-	padding: unset !important;
-}
-
-.tabs::after {
-	content: '';
-	position: fixed;
-	inset: 0;
-	display: block;
-	z-index: 999999999999999999;
-	pointer-events: none;
-
-	box-shadow: 
-		inset 0 24px 38px  3px rgba(0,0,0,0.14),
-		inset 0  9px 46px  8px rgba(0,0,0,0.12),
-		inset 0 11px 15px -7px rgba(0,0,0,0.20),
-		inset 0  2px  2px  0   rgba(0,0,0,0.14),
-		inset 0  3px  1px -2px rgba(0,0,0,0.12),
-		inset 0  1px  5px  0   rgba(0,0,0,0.20) !important;
-}
-
-tab-item.active:not(.pinned) {
-	padding-right: 10px !important;
-	margin-right: 2px !important;
+	opacity: 0.7 !important;
 }
 tab-item.active {
-	z-index: 100;
-	box-shadow: 
-		0 24px 38px  3px rgba(0,0,0,0.14),
-		0  9px 46px  8px rgba(0,0,0,0.12),
-		0 11px 15px -7px rgba(0,0,0,0.20),
-		0  2px  2px  0   rgba(0,0,0,0.14),
-		0  3px  1px -2px rgba(0,0,0,0.12),
-		0  1px  5px  0   rgba(0,0,0,0.20) !important;
+	opacity: 1 !important;
+	font-weight: bold;
 }
 
-tab-item.active::after {
-	width: 10px;
-	background: currentcolor;
-	opacity: .5;
-	content: '';
-	position: absolute;
-	inset: 0;
-	left: unset;
+/* tab active / hovered styling */
+tab-item.active .background {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 10px 0 0 10px;
+  background: #0000 !important;
+  border: none !important;
+  box-shadow: 0 0 0.6em var(--theme-colors-tab_background_text) inset;
+  opacity: 0.4;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+tab-item.pinned.active .background {
+	border-radius: 0;
+}
+tab-item .background,
+.after-tabs button:hover::before,
+.after-tabs [role="button"]:hover::before {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+tab-item tab-item-substance:hover {
+  background: #0000 !important;
+  box-shadow: 0 0 0.6em var(--theme-colors-tab_background_text) inset;
+  opacity: 0.9;
 }
 
-tab-item.active.pinned::after {
-	width: 50%;
-	background-color: rgba(255,255,255,0.65);
-}
+/* space between trees */
 
-tab-item.active > :nth-child(8),
-tab-item > :nth-child(8)::before,
-tab-item > :nth-child(8)::after {
-	display: none !important;
+tab-item[data-level="0"] {
+  margin-top: calc(var(--tab-size) / 3);
 }
-tab-item > tab-favicon {
-	order: 1;
-}
-tab-item > tab-label {
-	order: 2;
-}
-tab-item > tab-sound-button {
-	grid-area: sound;
-	order: 3;
-}
-tab-item > tab-counter {
-	order: 4;
-}
-tab-item > tab-twisty {
-	order: 99 !important;
-	position: unset;
-	display: block;
-}
-tab-item:not([data-child-ids]) tab-twisty,
-tab-item.pinned tab-twisty,
-tab-item.collapsed tab-twisty {
-	display: none !important;
-}
-tab-item > * {
-	margin: 0 !important;
-	padding-inline: 0 !important;
-}
-
-.newtab-button::before {
-	height: 12px;
-	width: 12px;
-	margin: 11px;
-}
-
-#tabbar {
-	bottom: 36px !important;
-}
-
-tab-item::before {
-	content: var(--overlay-content);
-	background: var(--overlay-color);
-	position: absolute;
-	inset: 0;
-}
-
-:root.sidebar {
-	background: transparent !important;
-	-moz-appearance: moz-win-glass !important;
-}
-
-:root[color-scheme="system-color"] #background::after {
-  content: none;
-background: transparent !important;
+tab-item[data-level="0"].pinned,
+tab-item[data-level="0"].pinned + tab-item[data-level="0"],
+tab-item[data-level="0"] + tab-item[data-level="0"]:not([data-child-ids]) {
+  margin-top: 0;
 }
 
 
+/* custom indents for tree branches */
+
+tab-item[data-level][data-level="0"] tab-item-substance {
+  margin-left: 0 !important;
+}
+tab-item[data-level][data-level="1"] tab-item-substance {
+  margin-left: calc(var(--tab-size) / 3) !important;
+}
+tab-item[data-level][data-level="2"] tab-item-substance {
+  margin-left: calc(var(--tab-size) / 1.5) !important;
+}
+tab-item[data-level][data-level="3"] tab-item-substance {
+  margin-left: calc(var(--tab-size) / 1) !important;
+}
+tab-item[data-level][data-level="4"] tab-item-substance {
+  margin-left: calc(var(--tab-size) / 0.7) !important;
+}
+tab-item[data-level][data-level="5"] tab-item-substance {
+  margin-left: calc(var(--tab-size) / 0.6) !important;
+}
+tab-item[data-level][data-level="6"] tab-item-substance {
+  margin-left: calc(var(--tab-size) / 0.5) !important;
+}
+tab-item[data-level][data-level="7"] tab-item-substance {
+  margin-left: calc(var(--tab-size) / 0.4) !important;
+}
 
 
+/* colourfull tabs for diffrent domains */
+
+
+tab-item[data-current-uri^="https://github.com"] tab-item-substance {
+  background-color: hsl(248,10%,58%,0.25);
+}
+tab-item[data-current-uri^="https://www.reddit.com"] tab-item-substance {
+  background-color: hsla(26,100%,50%,0.25);
+}
+tab-item[data-current-uri^="https://www.youtube.com"] tab-item-substance {
+  background-color: hsl(0,80%,48%,0.25);
+}
+tab-item[data-current-uri^="https://www.facebook.com"] tab-item-substance {
+  background-color: hsl(248,100%,40%,0.25);
+}
+tab-item[data-current-uri^="http://localhost"] tab-item-substance {
+  background-color: hsla(120,99%,27%,0.25);
+}
