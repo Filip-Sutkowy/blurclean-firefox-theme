@@ -99,20 +99,26 @@ tab-item[data-level][data-level="7"] tab-item-substance {
 
 
 /* colourfull tabs for diffrent domains */
-
-
-tab-item[data-current-uri^="https://github.com"] tab-item-substance {
-  background-color: hsl(248,10%,58%,0.25);
-}
-tab-item[data-current-uri^="https://www.reddit.com"] tab-item-substance {
-  background-color: hsla(26,100%,50%,0.25);
-}
-tab-item[data-current-uri^="https://www.youtube.com"] tab-item-substance {
-  background-color: hsl(0,80%,48%,0.25);
-}
-tab-item[data-current-uri^="https://www.facebook.com"] tab-item-substance {
-  background-color: hsl(248,100%,40%,0.25);
-}
-tab-item[data-current-uri^="http://localhost"] tab-item-substance {
-  background-color: hsla(120,99%,27%,0.25);
-}
+/* xxxxxx40 mean 25% transparency */
+tab-item[data-current-uri^="https://github.com"] tab-item-substance { background-color: #f5f5f540; }
+tab-item[data-current-uri^="https://gitlab.com"] tab-item-substance { background-color: #55448840; }
+tab-item[data-current-uri^="https://bitbucket.org"] tab-item-substance { background-color: #20508140; }
+tab-item[data-current-uri^="https://aur.archlinux.org"] tab-item-substance,
+tab-item[data-current-uri^="https://wiki.archlinux.org/"] tab-item-substance { background-color: #1793d140; }
+tab-item[data-current-uri^="https://www.youtube.com"] tab-item-substance { background-color: #ff000040; }
+tab-item[data-current-uri^="https://www.google.com"] tab-item-substance { background-color: #ea433540; }
+tab-item[data-current-uri^="https://www.facebook.com"] tab-item-substance,
+tab-item[data-current-uri^="https://www.messenger.com"] tab-item-substance { background-color: #1877f240; }
+tab-item[data-current-uri^="https://www.instagram.com/"] tab-item-substance { background-color: #c1358440; }
+tab-item[data-current-uri^="https://twitter.com"] tab-item-substance { background-color: #1da1f240; }
+tab-item[data-current-uri^="https://www.twitch.tv"] tab-item-substance { background-color: #9146ff40; }
+tab-item[data-current-uri^="https://www.reddit.com"] tab-item-substance { background-color: #ff450040; }
+tab-item[data-current-uri^="https://www.wikiwand.com"] tab-item-substance { background-color: #93959840; }
+tab-item[data-current-uri^="https://vk.com"] tab-item-substance { background-color: #45668e40; }
+tab-item[data-current-uri^="https://stackoverflow.com"] tab-item-substance { background-color: #f4802440; }
+tab-item[data-current-uri^="https://asana.com"] tab-item-substance { background-color: #ffb90040; }
+tab-item[data-current-uri^="https://www.netflix.com"] tab-item-substance { background-color: #e5091440; }
+tab-item[data-current-uri^="https://www.amazon.com"] tab-item-substance { background-color: #ff990040; }
+tab-item[data-current-uri^="https://allegro.pl"] tab-item-substance { background-color: #93450040; }
+tab-item[data-current-uri^="https://duckduckgo.com"] tab-item-substance { background-color: #fc4c0240; }
+tab-item[data-current-uri^="http://localhost"] tab-item-substance { background-color: hsla(120,99%,27%,0.25); }
