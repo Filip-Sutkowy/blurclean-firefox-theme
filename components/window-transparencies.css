@@ -1,14 +1,37 @@
+/* window transparencies */
 #main-window {
-	background: var(--bf-main-window) !important;
-	-moz-appearance: var(--bf-moz-appearance) !important;
+	background: var(--bct-main-window) !important;
+	-moz-appearance: var(--bct-moz-appearance) !important;
+}
+/* customization page */
+#customization-container {
+	background: var(--bct-w-pages-bg) !important;
+}
+/* blank page */
+#tabbrowser-tabpanels{
+	background: var(--bct-w-pages-bg) !important;
 }
 
-
-.browser-toolbar {
-	background: var(--bf-tab-toolbar-bg) !important;
+/* navbar / tabbar / titlebar */
+#nav-bar {
+	background: transparent !important;
+	border-color: transparent !important;
+}
+#navigator-toolbox {
+	background: var(--bct-w-nav-bg) !important;
+}
+#urlbar-background {
+	background: var(--bct-w-url-bg) !important;
 }
 
-
-toolbar {
-	background-image: none !important;
+/* Sidebar */
+#sidebar-box,
+#sidebar-box:-moz-lwtheme-darktext,
+#sidebar-box:-moz-lwtheme-brighttext {
+	--sidebar-background-color: var(--bct-w-sidebar-bg) !important;
+	--sidebar-text-color: var(--bct-w-sidebar-color) !important;
+}
+#sidebar,
+.sidebar-panel {
+	background: transparent !important;
 }

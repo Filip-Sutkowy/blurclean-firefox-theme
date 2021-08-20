@@ -1,23 +1,50 @@
 :root {	
+	--bct-blur: 6px;
+
 	--bct-tab-toolbar-bg: #000000AA;
 	
 	
 	--bct-bg: #00000088;
+	--bct-color: #F2F2F2;
+	
+
+	--bct-e-urlbar-bg: var(--bct-bg);
+	--bct-e-popups-bg: var(--bct-bg);
 
 
-	--bct-urlbar-bg: var(--bct-bg:);
-	--bct-popups-bg: var(--bct-bg:);
+	--bct-w-sidebar-bg: var(--bct-bg);
+	--bct-w-sidebar-color: var(--bct-color);
+
+	/* transparent window variables */
+	--bct-main-window: transparent;
+	--bct-w-pages-bg: var(--bct-bg);
+	--bct-w-nav-bg: var(--bct-bg);
+	--bct-w-url-bg: var(--bct-bg);
+	--bct-moz-appearance: -moz-win-glass !important;
 }
 
-
-:root[lwtheme] {
+/* light theme */
+:root:-moz-lwtheme-darktext {
 	--bct-tab-toolbar-bg: #ffffffaa;
 	
+	--bct-bg-mt: #ffffff40;
+	--bct-bg-lt: #ffffff80;
+	--bct-color: #0A0A0A;
 	
-	--bct-bg: #ffffff66;
+
+	--bct-w-sidebar-bg: var(--bct-bg-mt);
+	--bct-w-sidebar-color: var(--bct-color);
 	
-	
-	--bct-urlbar-bg: var(--bct-bg);
-	--bct-popups-bg: #ffffffaa;
+	--bct-e-urlbar-bg: var(--bct-bg-lt);
+	--bct-e-popups-bg: #ffffffaa;
+
+	/* transparent window variables */
+	--bct-w-pages-bg: var(--bct-bg-lt);
+	--bct-w-nav-bg: var(--bct-bg-lt);
+	--bct-w-url-bg: var(--bct-bg-mt);
 }
 
+/* dark theme */
+:root:-moz-lwtheme-brighttext {
+
+}

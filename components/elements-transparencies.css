@@ -1,14 +1,27 @@
 
+/* url bar */
 #widget-overflow-mainView,
 #urlbar[open="true"] > #urlbar-background {
-	background: var(--bct-urlbar-bg) !important;
-	backdrop-filter: blur(6px) !important;
+	background: var(--bct-e-urlbar-bg) !important;
+	backdrop-filter: contrast(100%) blur(var(--bct-blur)) saturate(25%) !important;
 	border: none !important;
 }
 
 
 .panel-arrowcontent  {
-	background: var(--bct-popups-bg) !important;
+	background: var(--bct-e-popups-bg) !important;
 	border: none !important;
 }
 
+#appMenu-protonMainView {
+	background: var(--bct-e-popups-bg) !important;
+	backdrop-filter: contrast(100%) blur(var(--bct-blur)) !important;
+	border-color: var(--bct-e-popups-bg) !important;
+}
+
+/* bookmark popup */
+.panel-arrowcontainer > slot:nth-child(2) {
+	background: var(--bct-e-popups-bg) !important;
+	backdrop-filter: blur(var(--bct-blur)) !important;
+	border-color: var(--bct-e-popups-bg) !important;	
+}

@@ -1,9 +1,13 @@
 /* paste this as Extra Styles in Advanced section of Tree Style Tab addon preferences */
 
+#tabbar-container {
+	margin: calc(var(--tab-size) / 3) calc(var(--tab-size) / 6);
+}
+
 /* tab shape and semi-transparent background (looks well on both dark and light mode) */
 tab-item tab-item-substance {
-	border-radius: 10px 0 0 10px;
-	background-color: #00000033;  
+	border-radius: 10px;
+	background-color: #00000033;
 }
 tab-item.pinned tab-item-substance {
 	border-radius: 0;
@@ -120,5 +124,6 @@ tab-item[data-current-uri^="https://asana.com"] tab-item-substance { background-
 tab-item[data-current-uri^="https://www.netflix.com"] tab-item-substance { background-color: #e5091440; }
 tab-item[data-current-uri^="https://www.amazon.com"] tab-item-substance { background-color: #ff990040; }
 tab-item[data-current-uri^="https://allegro.pl"] tab-item-substance { background-color: #93450040; }
+tab-item[data-current-uri^="https://www.olx.pl"] tab-item-substance { background-color: #cbf7ee40; }
 tab-item[data-current-uri^="https://duckduckgo.com"] tab-item-substance { background-color: #fc4c0240; }
 tab-item[data-current-uri^="http://localhost"] tab-item-substance { background-color: hsla(120,99%,27%,0.25); }

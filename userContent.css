@@ -1,6 +1,1 @@
-@-moz-document regexp("moz-extension://.+/sidebar/sidebar.html.*") {
-  :root,
-  #background {
-    background-color: rgb(40, 42, 48);
-  }
-}
+/* @import url('components/variables.css'); */
