@@ -1,7 +1,11 @@
+/* removes sidebar header, you can change sidebar content
+with keyboard shortcuts, for example ctrl+B for bookmarks menu */
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
 	visibility: collapse;
 }
 
+/* removes handle used to change sidebar width, you can modify width
+when you open something else in sidebar, for example bookmarks menu */
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
   display: none !important;
 }

@@ -1,5 +1,6 @@
+/* default variables */
 :root {	
-	--bct-blur: 6px;
+	--bct-blur: 10px;
 
 	--bct-tab-toolbar-bg: #000000AA;
 	
@@ -46,5 +47,5 @@
 
 /* dark theme */
 :root:-moz-lwtheme-brighttext {
-
+	/* there is nothing here, I treat default theme as dark */
 }

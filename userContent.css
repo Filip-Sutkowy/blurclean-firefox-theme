@@ -1,1 +1,8 @@
-/* @import url('components/variables.css'); */
+@import url('components/variables.css');
+
+/* Removes the white loading page */
+@-moz-document url(about:blank) {
+	html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
+    background: var(--bct-w-pages-bg) !important;
+	}
+}

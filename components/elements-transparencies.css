@@ -1,4 +1,3 @@
-
 /* url bar */
 #widget-overflow-mainView,
 #urlbar[open="true"] > #urlbar-background {
@@ -7,21 +6,9 @@
 	border: none !important;
 }
 
-
-.panel-arrowcontent  {
-	background: var(--bct-e-popups-bg) !important;
+/* overfow menu in customize menu */
+vbox#customization-panelWrapper box.panel-arrowcontent {
+	background: #0000 !important;
+	backdrop-filter: contrast(100%) blur(6px) !important;
 	border: none !important;
-}
-
-#appMenu-protonMainView {
-	background: var(--bct-e-popups-bg) !important;
-	backdrop-filter: contrast(100%) blur(var(--bct-blur)) !important;
-	border-color: var(--bct-e-popups-bg) !important;
-}
-
-/* bookmark popup */
-.panel-arrowcontainer > slot:nth-child(2) {
-	background: var(--bct-e-popups-bg) !important;
-	backdrop-filter: blur(var(--bct-blur)) !important;
-	border-color: var(--bct-e-popups-bg) !important;	
 }

@@ -19,6 +19,7 @@
 }
 #navigator-toolbox {
 	background: var(--bct-w-nav-bg) !important;
+	border: none !important;
 }
 #urlbar-background {
 	background: var(--bct-w-url-bg) !important;
@@ -30,6 +31,8 @@
 #sidebar-box:-moz-lwtheme-brighttext {
 	--sidebar-background-color: var(--bct-w-sidebar-bg) !important;
 	--sidebar-text-color: var(--bct-w-sidebar-color) !important;
+	background: var(--bct-w-sidebar-bg) !important;
+
 }
 #sidebar,
 .sidebar-panel {

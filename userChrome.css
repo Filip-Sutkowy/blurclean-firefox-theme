@@ -1,18 +1,19 @@
 /* variables used in styling */
 @import url('components/variables.css');
 
-/* hide tabbar and move addressbar to the top */
-@import url('components/window-control-placeholder.css');
-@import url('components/hide-tabbar.css');
+/* optional styles for TST,
+hide tabbar and move addressbar to the top */
+/* @import url('components/window-control-placeholder.css'); */
+/* @import url('components/hide-tabbar.css'); */
 
 /* icons in menu */
 @import url('components/menu-icons.css');
 
-/* transparencies for browser elements */
+/* transparencies for browser elements (popups mostly) */
 @import url('components/elements-transparencies.css');
 
-/* transparencies for window (broken on non-linux systems) */
+/* optional transparencies for window (broken on non GNU/linux systems) */
 /* @import url('components/window-transparencies.css'); */
 
-/* TST tweaks */
-@import url('components/tst-tweaks.css');
+/* optional TST tweaks */
+/* @import url('components/tst-tweaks.css'); */
